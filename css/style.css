@@ -95,18 +95,23 @@ ul{
     font-size: 16px;
     letter-spacing: 2px;
     font-weight: 500;
-    padding: 12px 35px;
-    color: white;
-    background: var(--skin-color);
-    border-radius:10px;
+    padding: 8px 20px;
+    color: var(--skin-color);
+    background: transparent;
+    border-radius:100px;
     display: inline-block;
     white-space: nowrap;
-    transition: all 0.3s ease;
-    border: none;
+    transition: all 0.5s ease;
+    border: 2px solid var(--skin-color);
 }
 .btn:hover{
-    transform: scale(1.05);
+    background: var(--skin-color);
+    color: white;
 }
+.shadow-dark{
+    box-shadow: 0 0 10px rgba(48, 48, 77, 0.15);
+}
+    
 /* side */
 .side{
     width: 270px;
@@ -293,4 +298,233 @@ h3.name-head span{
     flex: 0 0 100%;
     max-width: 100%;
 
+}
+.about .about-content .about-txt{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .about-txt h3{
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+.about .about-content .about-txt h3 span{
+    color: var(--skin-color);
+}
+.about .about-content .about-txt p{
+    text-align: justify;
+    font-size: 18PX;
+    line-height:25px;
+    color: var(--text-black-700);
+}
+.about .about-content .personal-info{
+    flex: 0 0 60%;
+    max-width: 60%;
+    margin-top: 40px;
+}
+.about .about-content .personal-info .info-item{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.about .about-content .personal-info .info-item p{
+    font-weight: 600;
+    padding: 10px 0;
+    font-size: 18px;
+    color: var(--text-black-900);
+    border-bottom: 1px solid var(--bg-black-50);
+}
+.about .about-content .personal-info .info-item span{
+    font-weight: 400;
+    font-size: 14px;
+    color: var(--text-black-700);
+    margin-left: 4px;
+    display: inline-block;
+}
+.about .about-content .personal-info .buttons{
+    margin-top: 20px;
+}
+.about .about-content .personal-info .buttons .btn{
+    margin-left: 15px;
+    margin-top: 10px;
+}
+/* skills */
+.about .about-content .skills{
+    flex: 0 0 40%;
+    max-width: 40%;
+    margin-top: 40px;    
+}
+.about .about-content .skills .skill-item{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .skills .skill-item h5{
+    line-height: 40px;
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-black-900);
+}
+.about .about-content .skills .skill-item .progress{
+    background-color: var(--bg-black-50);
+    height: 7px;
+    border-radius: 4px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .skills .skill-item{
+    margin-bottom: 20px;
+}
+.about .about-content .skills .skill-item .progress .progress-in{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    border-radius: 4px;
+    background-color: var(--skin-color);
+}
+.about .about-content .skills .skill-item .skill-percent{
+    position: absolute;
+    right:0;
+    color: white;
+    top: -40px;
+    font-weight: 400;
+    background-color: var(--skin-color);
+    padding: 4px;
+    border-radius: 10px;
+}
+/* education */
+.about .about-content .education,
+.about .about-content .experience{
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-top: 30px;
+}
+.about .about-content h3.title{
+    font-size: 24px;
+    margin-bottom: 30px;
+    font-weight: 700;
+    color: var(--text-black-900);
+}
+.about .about-content .timeline-box{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.about .about-content .timeline{
+    background-color: var(--bg-black-100);
+    padding: 30px 15px;
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+}
+.about .about-content .timeline .timeline-item{
+    position: relative;
+    padding-left: 37px;
+    padding-bottom: 50px;
+}
+.about .about-content .timeline .timeline-item:last-child{
+    padding-bottom: 0;
+}
+.about .about-content .timeline .timeline-item::before{
+    content: '';
+    width: 2px;
+    position: absolute;
+    height: 100%;
+    left: 7px;
+    top: 0;
+    background-color: var(--skin-color);
+}
+.about .about-content .timeline .timeline-item .circle-dot{
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 15px;
+    width: 15px;
+    border-radius: 100%;
+    background-color: var(--skin-color);
+}
+.about .about-content .timeline .timeline-date{
+    font-weight: 400;
+    font-size:18px;
+    margin-bottom: 12px;
+    color: var(--text-black-700);
+}
+.about .about-content .timeline .timeline-date .fa-solid{
+    margin-right: 10px;
+}
+.about .about-content .timeline .timeline-title{
+    font-weight: 700;
+    font-size: 16px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    color: var(--text-black-900);
+}
+.about .about-content .timeline .timeline-text{
+    line-height: 25px;
+    font-size: 14px;
+    text-align: justify;
+}
+.about .about-content .timeline .timeline-text span{
+    background-color: var(--skin-color);
+    padding: 7px;
+    color: white;
+    border-radius: 5px;
+    margin-left: 20px;
+    font-weight: 600;
+}
+/* services */
+.service .container{
+    padding-bottom: 40px;
+}
+.service .service-item{
+    margin-bottom: 30px;
+    flex: 0 0 33.3%;
+    max-width: 33.3%;
+}
+.service .service-item .service-item-inner{
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    border-radius: 10px;
+    padding: 30px 15px;
+    text-align: center;
+    transition: all 0.4s ease;
+}
+.service .service-item .service-item-inner:hover{
+    box-shadow: 0 0 20px rgba(48, 48, 77, 0.15);
+    cursor: pointer;
+}
+.service .service-item .service-item-inner .icon{
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    display:block;
+    background-color: var(--skin-color);
+    margin: 0 auto 30px;
+    text-align: center;
+    transition: 0.4s ease;
+
+}
+.service .service-item .service-item-inner .icon .fa-solid{
+    font-size: 30px;
+    line-height: 60px;
+    color: white;
+    transition: 0.4s ease;
+}
+.service .service-item .service-item-inner:hover .icon{
+    background-color: transparent;
+}
+.service .service-item .service-item-inner:hover .icon .fa-solid{
+    color: var(--skin-color);
+}
+.service .service-item .service-item-inner h4{
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: var(--text-black-900);
+    font-weight: 700;
+    text-transform: capitalize;
+}
+.service .service-item .service-item-inner p{
+    font-size: 16px;
+    color: var(--text-black-700);
+    line-height: 25px;
 }
