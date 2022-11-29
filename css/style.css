@@ -528,3 +528,95 @@ h3.name-head span{
     color: var(--text-black-700);
     line-height: 25px;
 }
+/* portfolio */
+.portfolio .container{
+    padding-bottom: 40px;
+}
+.portfolio .portfolio-heading{
+    flex: 0 0 100%;
+    max-width: 100%;
+    margin-bottom: 40px;
+}
+.portfolio .portfolio-heading h2{
+    color: var(--text-black-900);
+    font-weight: 500;
+}
+.portfolio .portfolio-item{
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+    margin-bottom: 30px;
+}
+.portfolio .portfolio-item-inner{
+    border: 6px solid var(--bg-black-100);
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+.portfolio .portfolio-item-inner .portfolio-img img{
+    border-radius: 10px;
+    width: 100%;
+    display: block;
+}
+/* contact */
+.contact-title{
+    color: var(--skin-color);
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+.contact-sub-title{
+    color: var(--text-black-900);
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 60px;
+}
+.contact .contact-info-item{
+    flex: 0 0 25%;
+    max-width: 25%;
+    text-align: center;
+    margin-bottom: 60px;
+}
+.contact .contact-info-item .icon{
+    display: inline-block;
+}
+.contact .contact-info-item .icon .fa-solid{
+    font-size: 25px;
+    color: var(--skin-color);
+}
+.contact .contact-info-item h4{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text-black-900);
+    text-transform: capitalize;
+    margin: 15px 0 5px;
+}
+.contact .contact-info-item a{
+    font-size: 16px;
+    line-height: 25px;
+    color: var(--text-black-700);
+    font-weight: 400;
+    transition: 0.2s ease;
+}
+.contact .contact-info-item a:hover{
+    color: var(--skin-color);
+}
+/* contact me */
+.contact .form-contact{
+    width: 0 0 100%;
+    max-width: 100%;
+}
+.contact .form-contact .col-6{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+.contact .form-contact .col-12{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+.contact .form-contact .form-item{
+    margin-bottom: 30px;
+}
+.contact .form-contact .form-item .form-control{
+    width: 100%;
+    height: 50px;
+}
