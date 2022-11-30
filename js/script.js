@@ -17,7 +17,7 @@ const nav = document.querySelector(".nav"),
         a.addEventListener("click" , function()
         {
             // back section disable start
-            removeBackSection(j);
+            removeBackSection();
         // back section disable end
             for(let j=0; j<totalNavList; j++)
             {
@@ -38,21 +38,21 @@ const nav = document.querySelector(".nav"),
     }
     function removeBackSection()
     {
-        for(let i=0; i<totalSection;i++)
+        for(let i=0; i<totalSection; i++)
         {
             allSection[i].classList.remove("back-section");
         }
     }
-    function addBackSection()
+    function addBackSection(num)
     {
-        allSection[num].classList.add("back-section")
+        allSection[num].classList.add("back-section");
     }
     function showSection(element)
     {
         // active section disable start
         for(let i=0; i<totalSection; i++)
         {
-            allSection[i].classList.remove('active');
+            allSection[i].classList.remove("active");
         }
         // active section disable end
         const target = element.getAttribute("href").split("#")[1];
@@ -60,7 +60,7 @@ const nav = document.querySelector(".nav"),
     }
     function updateNav(element)
     {
-        for(let i=0; i<totalNavList;i++)
+        for(let i=0; i<totalNavList; i++)
         {
             navList[i].querySelector("a").classList.remove("active");
             const target = element.getAttribute("href").split("#")[1];
@@ -73,7 +73,6 @@ const nav = document.querySelector(".nav"),
     document.querySelector(".hire-me").addEventListener("click", function()
     {
         const sectionIndex = this.getAttribute("data-section-index");
-
         showSection(this);
         updateNav(this);
         removeBackSection();
@@ -92,6 +91,6 @@ const nav = document.querySelector(".nav"),
             navTogglerBtn.classList.toggle("open");
             for(let i=0; i<totalSection; i++)
             {
-                allSection[i].classList.toggle("open")
+                allSection[i].classList.toggle("open");
             }
         }

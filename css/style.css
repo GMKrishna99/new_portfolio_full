@@ -674,6 +674,7 @@ h3.name-head span{
     box-shadow: 0 0 20px rgba(48, 48, 77, 0.15);
 }
 .contact .form-contact .form-item textarea.form-control{
+    resize: none;
     height: 140px;
 }
 .contact .form-contact .btn{
