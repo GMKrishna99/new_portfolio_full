@@ -1,10 +1,26 @@
 /* media query */
 @media(max-width:1199px){
+    .section .container{
+        padding-top:70px ;
+    }
     .side{
         left: -270px;
     }
-    .main-content{
-        padding-left: 0;
+    .side.open{
+        left: 0;
+    }
+    .side .nav-toggler{
+        display: flex;
+        left: 30px;
+    }
+    .side .nav-toggler.open{
+        left: 300px;
+    }
+    .section{
+        left: 0;
+    }
+    .section.open{
+        left: 270px;
     }
     .about .about-content .personal-info .info-item p span{
         display: block;
