@@ -5,8 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G_M_Krishna | Portfolio</title>
+    <!-- css links start -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/color css/color.css">
+    <link rel="stylesheet" href="css/color css/color-1.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
+    <link rel="stylesheet" href="css/styleswitcher.css">
+    <!-- style switcher start-->
+    <link rel="stylesheet" href="css/color css/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/color css/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/color css/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/color css/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/color css/color-5.css" class="alternate-style" title="color-5" disabled>
+    <!-- style switcher end -->
+    <!-- css links end -->
     <link rel="shortcut icon" href="images/logo.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/7b39153ed3.js" crossorigin="anonymous"></script>
@@ -24,11 +35,11 @@
             <span></span>
         </div>
         <ul class="nav">
-            <li><a href="#" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
-            <li><a href="#"><i class="fa fa-user"></i> About</a></li>
-            <li><a href="#"><i class="fa fa-list"></i>Services</a></li>
-            <li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-            <li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+            <li><a href="#home" class="active"><i class="fa-solid fa-house"></i> Home</a></li>
+            <li><a href="#about"><i class="fa fa-user"></i> About</a></li>
+            <li><a href="#services"><i class="fa fa-list"></i>Services</a></li>
+            <li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+            <li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
             
         </ul>
     </div>
@@ -36,15 +47,15 @@
     <!-- main content start -->
     <div class="main-content">
         <!-- Home section Start -->
-        <section class="home section">
+        <section class="home section" id=home>
             <div class="container">
                <div class="row">
                 <div class="home-info padd-15">
                     <h3 class="name-head">
                         Hello,my name is <span class="name">Mohan Krishna</span>
                     </h3>
-                    <h3 class="my-pro">I' m a <span class="type">Web Developer & Designer</span></h3>
-                    <p>I'm a web Designer & Developer with the experience of creating some web pages in learning stage, My expertise is to create and web design and many more...</p>
+                    <h3 class="my-pro">I' m a <span class="type">Web Developer</span></h3>
+                    <p>I'm a web Designer & Developer with the experience of creating some web pages in learning stage, My expertise is to create and web design and illustrate , photoshop many more...</p>
                     <a href="#contact" class="btn hire-me">Hire Me</a>
                 </div>
                 <div class="home-image padd-15">
@@ -56,7 +67,7 @@
         <!-- Home section end -->
 
         <!-- About section start -->
-        <section class="about section">
+        <section class="about section" id="about">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -84,7 +95,7 @@
                                         <p>Website : <span>under building</span></p>
                                     </div>
                                     <div class="info-item padd-15">
-                                        <p>Email : <span>guntikovelamohankrishna@gmail.com</span></p>
+                                        <p>Email : <span>gmohankrishna23@gmail.com</span></p>
                                     </div>
                                     <div class="info-item padd-15">
                                         <p>Degree : <span>Bcom(Computer Applications)</span></p>
@@ -229,7 +240,7 @@
         </section>
         <!-- About section end -->
         <!-- service section start -->
-        <section class="service section">
+        <section class="service section" id="services">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -315,7 +326,7 @@
         <!-- service section end -->
 
         <!-- portfolio section start -->
-        <section class="portfolio section">
+        <section class="portfolio section" id="portfolio">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -393,7 +404,7 @@
         <!-- portfolio section end -->
 
         <!-- contact section start -->
-        <section class="contact section">
+        <section class="contact section" id="contact">
             <div class="container">
                 <div class="row">
                     <div class="section-title padd-15">
@@ -483,7 +494,30 @@
     <!-- main content end -->
 </div>
 <!-- main  container end -->
+<!-- style switcher start -->
+<div class="style-switcher">
+    <div class="style-switcher-toggler s-icon">
+        <i class="fa fa-cog fa-spin"></i>
+    </div>
+    <div class="day-night s-icon">
+        <i class="fa-solid fa-moon"></i>
+    </div>
+    <h4>theme Colors</h4>
+    <div class="colors">
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+        <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+        <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+    </div>
+</div>
+<!-- style switcher end -->
+
 <!-- js files -->
+<!-- typed js  start-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.12/typed.min.js" referrerpolicy="no-referrer"></script>
+<!-- typed js end -->
     <script src="js/script.js"></script>
+    <script src="js/style-switcher.js"></script>
 </body>
 </html>

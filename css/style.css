@@ -7,6 +7,13 @@
     --text-black-900:#302e4d;
     --text-black-700:#504e70;
 }
+body.dark{
+    --bg-black-900:#151515;
+    --bg-black-100:#222222;
+    --bg-black-50:#393939;
+    --text-black-900:#ffffff;
+    --text-black-700:#e9e9e9;
+}
 body{
     margin: 0;
     padding: 0;
@@ -452,14 +459,15 @@ h3.name-head span{
 .about .about-content .timeline .timeline-date .fa-solid{
     margin-right: 10px;
 }
-.about .about-content .timeline .timeline-title{
+.about .about-content .timeline .timeline-title {
     font-weight: 700;
     font-size: 16px;
     margin-bottom: 15px;
     text-transform: uppercase;
     color: var(--text-black-900);
 }
-.about .about-content .timeline .timeline-text{
+.about .about-content .timeline .timeline-text  {
+    color: var(--text-black-900);
     line-height: 25px;
     font-size: 14px;
     text-align: justify;
@@ -602,7 +610,7 @@ h3.name-head span{
 }
 /* contact me */
 .contact .form-contact{
-    width: 0 0 100%;
+    flex: 0 0 100%;
     max-width: 100%;
 }
 .contact .form-contact .col-6{
@@ -619,4 +627,22 @@ h3.name-head span{
 .contact .form-contact .form-item .form-control{
     width: 100%;
     height: 50px;
+    border-radius: 25px;
+    background-color: var(--bg-black-100);
+    border: 1px solid var(--bg-black-50);
+    padding: 10px 25px;
+    font-size: 16px;
+    color: var(--text-black-700);
+    transition: all 0.3s ease;
+}
+.contact .form-contact .form-item .form-control:focus{
+    box-shadow: 0 0 20px rgba(48, 48, 77, 0.15);
+}
+.contact .form-contact .form-item textarea.form-control{
+    height: 140px;
+}
+.contact .form-contact .btn{
+    align-items: center;
+    height: 50px;
+    padding: 0 30px;
 }
