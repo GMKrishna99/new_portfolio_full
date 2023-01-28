@@ -1,13 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 :root{
-    --bg-black-900:#f2f2fc;
-    --bg-black-100:#fdf9ff;
-    --bg-black-50:#e8dfec;
-    --text-black-900:#302e4d;
-    --text-black-700:#504e70;
-}
-body.dark{
     --bg-black-900:#151515;
     --bg-black-100:#222222;
     --bg-black-50:#393939;
@@ -290,38 +283,6 @@ h3.name-head span{
     font-size: 40px;
     font-weight: 700;
     color: var(--skin-color);
-}
-.home .home-image{
-    flex: 0 0 40%;
-    max-width: 40%;
-    text-align: center;
-    position: relative;
-}
-.home-image::after{
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-bottom: 10px solid var(--skin-color);
-    border-right: 10px solid var(--skin-color);
-    right: 20px;
-    bottom: -40px;
-}
-.home-image::before{
-    content: '';
-    position: absolute;
-    height: 80px;
-    width: 80px;
-    border-top: 10px solid var(--skin-color);
-    border-left: 10px solid var(--skin-color);
-    left: -20px;
-    top: -40px;
-}
-.home .home-image img{
-    margin: auto;
-    border-radius: 5px;
-    height: 400px;
-
 }
 .home .my-pro{
     font-size: 30px;
