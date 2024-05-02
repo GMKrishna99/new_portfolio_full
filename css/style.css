@@ -400,6 +400,19 @@ h3.name-head span {
   max-width: 50%;
   margin-top: 30px;
 }
+.color {
+  color: #dddddd !important;
+}
+.list-style {
+  list-style: circle;
+}
+.project_list {
+  padding-top: 26px;
+}
+.width-full {
+  width: 100%;
+  margin-top: 20px;
+}
 .title {
   font-size: 24px;
   margin-bottom: 30px;
